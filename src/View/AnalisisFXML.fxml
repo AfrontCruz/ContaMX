@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-image: url(&quot;file:///C:/Users/alc22/OneDrive/Escritorio/NetBeansProjects/ContableMX/src/img/back.jpg&quot;);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AnalisisController">
+   <children>
+      <Label layoutX="130.0" layoutY="13.0" text="Tabla de ingresos" textFill="WHITE">
+         <font>
+            <Font name="Adidas17" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablaIngresos" layoutX="14.0" layoutY="46.0" prefHeight="411.0" prefWidth="350.0" style="-fx-font-family: Adidas17; -fx-font-size: 10;">
+         <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+         </columns>
+      </TableView>
+      <Label layoutX="545.0" layoutY="13.0" text="Tabla de gastos" textFill="WHITE">
+         <font>
+            <Font name="Adidas17" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablaGastos" layoutX="424.0" layoutY="46.0" prefHeight="411.0" prefWidth="350.0" style="-fx-font-family: Adidas17; -fx-font-size: 10;">
+         <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+         </columns>
+      </TableView>
+      <JFXTextField id="texto" fx:id="totalIngreso" alignment="CENTER" editable="false" focusColor="WHITE" labelFloat="true" layoutX="126.0" layoutY="488.0" promptText="Total de ingresos" stylesheets="@../css/style.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Adidas17" size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField id="texto" fx:id="totalGastos" alignment="CENTER" editable="false" focusColor="WHITE" labelFloat="true" layoutX="536.0" layoutY="488.0" promptText="Total de gastos" stylesheets="@../css/style.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Adidas17" size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField id="texto" fx:id="capital" alignment="CENTER" editable="false" focusColor="WHITE" labelFloat="true" layoutX="337.0" layoutY="521.0" promptText="capital de trabajo" stylesheets="@../css/style.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Adidas17" size="17.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-image: url(&quot;file:///C:/Users/alc22/OneDrive/Escritorio/NetBeansProjects/ContableMX/src/img/back.jpg&quot;);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MenuController">
+   <children>
+      <JFXButton id="boton" fx:id="btnIngresos" layoutX="22.0" layoutY="479.0" onMouseClicked="#abrirIngresos" prefHeight="35.0" prefWidth="203.0" stylesheets="@../css/style.css" text="Ingresos" />
+      <JFXButton id="boton" fx:id="btnGastos" layoutX="302.0" layoutY="479.0" onMouseClicked="#abrirGastos" prefHeight="35.0" prefWidth="203.0" stylesheets="@../css/style.css" text="Gastos" />
+      <JFXButton id="boton" fx:id="btnAnalisis" layoutX="571.0" layoutY="479.0" onMouseClicked="#abrirAnalisis" prefHeight="35.0" prefWidth="203.0" stylesheets="@../css/style.css" text="análisis" />
+      <Label layoutX="198.0" layoutY="189.0" text="Contable" wrapText="true">
+         <font>
+            <Font name="AdidasWC2014 v3" size="96.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.6380952380952382" endY="0.49047619047619045" startY="0.42857142857142855">
+               <stops>
+                  <Stop color="#48ff00" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="505.0" layoutY="177.0" text="Mx" wrapText="true">
+         <font>
+            <Font name="AdidasWC2014 v3" size="180.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.6380952380952382" endY="0.49047619047619045" startY="0.42857142857142855">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="390.0" layoutY="273.0" text="Powered by Apps" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Adidas17" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
